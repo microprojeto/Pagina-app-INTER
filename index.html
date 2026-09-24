@@ -8,29 +8,42 @@
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#050505;font-family:'Inter',sans-serif;display:flex;justify-content:center}
-.page{width:100%;max-width:430px;background:#0A0A0A;background-image:radial-gradient(circle at 50% 0%, rgba(168,85,247,0.18) 0%, transparent 60%);display:flex;flex-direction:column;align-items:center}
-.top-bar{background:#0A0A0A;border:1px solid #A855F7;color:#fff;text-align:center;padding:8px 18px;font-weight:700;font-size:11px;width:fit-content;max-width:90%;line-height:1.3;letter-spacing:0.6px;text-transform:uppercase;border-radius:999px;margin:18px auto 0;box-shadow:0 0 12px rgba(168,85,247,0.12)}
-.content{padding:28px 20px 40px;text-align:center;width:100%}
+.page{
+  width:100%;max-width:430px;
+  background: radial-gradient(120% 60% at 50% 0%, #1e1230 0%, #0a0a0a 60%, #050505 100%);
+  display:flex;flex-direction:column;align-items:center
+}
+.top-bar{
+  background:rgba(0,0,0,0.6);border:1px solid #A855F7;color:#fff;text-align:center;
+  padding:8px 18px;font-weight:700;font-size:11px;width:fit-content;max-width:90%;
+  line-height:1.3;letter-spacing:0.6px;text-transform:uppercase;border-radius:999px;
+  margin:18px auto 0;box-shadow:0 0 12px rgba(168,85,247,0.12)
+}
+.content{padding:28px 16px 40px;text-align:center;width:100%;display:flex;flex-direction:column;align-items:center}
 .logo{font-size:12px;letter-spacing:4px;color:#D1D1D6;font-weight:600;margin-top:28px;margin-bottom:22px}
-h1{font-size:32px;font-weight:900;line-height:1.05;letter-spacing:-0.5px;margin-bottom:32px;text-transform:uppercase;text-align:center}
-.sub-w{font-size:16px;font-weight:700;color:#fff;line-height:1.35;margin-bottom:12px}
-.sub-g{font-size:13.5px;color:#E2E2E6;line-height:1.5;margin-bottom:26px;font-weight:500}
-.video{width:100%;aspect-ratio:16/9;background:#000;border-radius:18px;margin-bottom:40px;overflow:hidden;border:0.5px solid rgba(168,85,247,0.25)}
-.rec{font-size:19px;font-weight:900;color:#fff;letter-spacing:-0.3px;margin-bottom:10px;text-transform:uppercase}
-.mini-light{font-size:10px;letter-spacing:3px;color:#B4B4BB;font-weight:600;text-transform:uppercase;opacity:1;margin-bottom:18px}
-.btn{display:inline-block;background:#A855F7;color:#fff;padding:16px 40px;border-radius:999px;font-weight:900;font-size:14px;text-decoration:none;letter-spacing:0.5px;margin:0 auto 10px;box-shadow:0 8px 22px rgba(168,85,247,0.35);border:none;cursor:pointer;text-transform:uppercase}
+h1{font-size:26px;font-weight:900;line-height:1.05;letter-spacing:-0.4px;margin-bottom:16px;text-transform:uppercase;text-align:center}
+.sub-w{font-size:15px;font-weight:600;color:#fff;line-height:1.4;margin-bottom:26px;max-width:320px}
+.video{width:100%;aspect-ratio:16/9;background:#000;border-radius:18px;margin-bottom:36px;overflow:hidden;border:0.5px solid rgba(168,85,247,0.18)}
+.rec{font-size:18px;font-weight:900;color:#fff;letter-spacing:-0.3px;margin-bottom:12px;text-transform:uppercase}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;
+  width:fit-content;max-width:92%;background:#A855F7;color:#fff;border:none;border-radius:999px;
+  padding:14px 26px;font-weight:900;font-size:14px;letter-spacing:0.3px;
+  margin:24px auto 12px auto;box-shadow:0 8px 24px rgba(168,85,247,0.35);
+  text-decoration:none;text-transform:uppercase;white-space:nowrap;line-height:1;cursor:pointer;transition:all 0.25s ease;
+}
+.btn:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(168,85,247,0.5)}
 .btn:active{transform:scale(0.97)}
-.urgency{font-size:12px;color:#E2E2E6;font-style:italic;font-weight:500;margin-bottom:8px;line-height:1.4}
+.btn:disabled{opacity:0.85;pointer-events:none}
+.urgency{font-size:12px;color:#E2E2E6;font-style:italic;font-weight:500;margin-bottom:6px;line-height:1.4;max-width:320px}
 .under{font-size:11px;color:#A1A1A6;margin-bottom:22px}
 .garant{font-size:14px;font-weight:700;color:#fff;margin-bottom:10px}
 .garant span{color:#A855F7}
 .dev{font-size:13.5px;color:#C7C7CC;font-weight:500;line-height:1.5;margin-bottom:30px}
 .dev span{color:#A855F7;font-weight:700}
-.div{height:1px;width:85%;margin:36px auto 28px;background:linear-gradient(90deg, rgba(168,85,247,0) 0%, rgba(168,85,247,0.9) 50%, rgba(168,85,247,0) 100%);box-shadow:0 0 10px rgba(168,85,247,0.6), 0 0 20px rgba(168,85,247,0.25)}
-.foot{line-height:1.6;padding-top:8px}
-.foot-title{font-size:11px;font-weight:700;color:#8E8E93;letter-spacing:2.5px;margin-bottom:10px;text-transform:uppercase}
-.foot-links{font-size:11px;color:#8E8E93}
-.foot-links a{color:#8E8E93;text-decoration:none}
+.div{height:1px;width:85%;margin:36px auto 28px;background:linear-gradient(90deg, rgba(168,85,247,0) 0%, rgba(168,85,247,0.9) 50%, rgba(168,85,247,0) 100%);box-shadow:0 0 10px rgba(168,85,247,0.6)}
+.foot{line-height:1.6;padding-top:8px;text-align:center}
+.foot-simple{font-size:11px;font-weight:500;color:#8E8E93;letter-spacing:0.3px}
 </style>
 </head>
 <body>
@@ -39,18 +52,16 @@ h1{font-size:32px;font-weight:900;line-height:1.05;letter-spacing:-0.5px;margin-
   <div class="content">
     <div class="logo">INTER • TURBO</div>
     <h1>
-      <span style="color:#A855F7;">BALANCETE QUE</span><br>
+      <span style="color:#A855F7;">O BALANCETE QUE</span><br>
       <span style="color:#FFFFFF;">VOCÊ NÃO CONFERE</span><br>
       <span style="color:#A855F7;">VAI TE MULTAR?</span>
     </h1>
     <div class="sub-w">A receita já sabe onde seu balancete está errado. Você não.</div>
-    <div class="sub-g">Em 27 segundos, veja a conta que vai te multar no ECD.</div>
     <div class="video"></div>
     <div class="rec">O QUE O INTER FAZ?</div>
-    <div class="mini-light">BALANCETE • IMPOSTOS • FECHAMENTO</div>
-    <div style="font-size:14px; color:#C2C2C8; line-height:1.6; font-weight:400; margin-bottom:32px; max-width:320px; margin-left:auto; margin-right:auto;">
+    <div style="font-size:14px; color:#C2C2C8; line-height:1.6; font-weight:400; margin-bottom:8px; max-width:320px;">
       Te economiza 3h em cada fechamento.<br>
-      <span style="color:#fff; font-weight:700;">Varre seu balancete inteiro e aponta a conta exata que está te travando, antes de você enviar.</span>
+      <span style="color:#fff; font-weight:700;">Varre seu balancete inteiro e aponta a conta exata que vai te multar no ECD, antes de você enviar.</span>
     </div>
     <a href="SEU_LINK_CAKTO_AQUI" id="btn-checkout" class="btn">QUERO O INTER TURBO</a>
     <div class="urgency">Oportunidade única: leve agora por R$39,90. Depois volta para R$97</div>
@@ -59,16 +70,15 @@ h1{font-size:32px;font-weight:900;line-height:1.05;letter-spacing:-0.5px;margin-
     <div class="dev">Se não economizar 3h no seu fechamento,<br>devolvemos <span>100%</span> do seu investimento.</div>
     <div class="div"></div>
     <div class="foot">
-      <div class="foot-title">INTER • TURBO © 2027</div>
-      <div class="foot-links"><a href="#">Termos</a> • <a href="#">Privacidade</a> • <a href="#">Suporte</a></div>
+      <div class="foot-simple">Inter 2027©. Todos os direitos reservados.</div>
     </div>
   </div>
 </div>
 <script>
 document.getElementById('btn-checkout').addEventListener('click', function(e){
   e.preventDefault(); const btn=this; const link=btn.getAttribute('href');
-  btn.textContent='Auditando...'; btn.style.opacity='0.8'; btn.style.pointerEvents='none';
-  setTimeout(function(){ window.location.href=link; }, 1500);
+  btn.textContent='Guardando...'; btn.disabled=true;
+  setTimeout(function(){ window.location.href=link; }, 1200);
 });
 </script>
 </body>
