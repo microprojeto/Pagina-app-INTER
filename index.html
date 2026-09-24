@@ -9,14 +9,13 @@
 *{margin:0;padding:0;box-sizing:border-box}
 body{background:#050505;font-family:'Inter',sans-serif;display:flex;justify-content:center}
 .page{width:100%;max-width:430px;background:#0A0A0A;display:flex;flex-direction:column;align-items:center}
-.top-bar{background:rgba(0,0,0,0.6);border:1px solid #A855F7;color:#fff;text-align:center;padding:8px 18px;font-weight:700;font-size:11px;width:fit-content;max-width:90%;line-height:1.3;letter-spacing:0.6px;text-transform:uppercase;border-radius:999px;margin:16px auto 0;box-shadow:0 0 12px rgba(168,85,247,0.12)}
+.top-bar{background:rgba(0,0,0,0.6);border:1px solid #A855F7;color:#fff;text-align:center;padding:8px 18px;font-weight:700;font-size:11px;width:fit-content;max-width:90%;line-height:1.3;letter-spacing:0.6px;text-transform:uppercase;border-radius:999px;margin:22px auto 0;box-shadow:0 0 12px rgba(168,85,247,0.12)}
 .content{padding:0 16px 40px;text-align:center;width:100%;display:flex;flex-direction:column;align-items:center}
-h1{font-size:26px;font-weight:900;line-height:1.05;letter-spacing:-0.4px;margin:16px 0 14px;text-transform:uppercase;text-align:center}
+h1{font-size:26px;font-weight:900;line-height:1.05;letter-spacing:-0.4px;margin:28px 0 14px;text-transform:uppercase;text-align:center}
 .sub-w{font-size:15px;font-weight:500;color:#D1D1D6;line-height:1.4;margin-bottom:26px;max-width:320px}
 .video{width:100%;aspect-ratio:16/9;background:#000;border-radius:18px;margin-bottom:36px;overflow:hidden;border:0.5px solid rgba(255,255,255,0.08)}
 .rec{font-size:18px;font-weight:900;color:#fff;letter-spacing:-0.3px;margin-bottom:12px;text-transform:uppercase}
 .btn{display:inline-flex;align-items:center;justify-content:center;width:fit-content;max-width:92%;background:#A855F7;color:#fff;border:none;border-radius:999px;padding:14px 26px;font-weight:900;font-size:14px;letter-spacing:0.3px;margin:24px auto 12px auto;box-shadow:0 8px 24px rgba(168,85,247,0.35);text-decoration:none;text-transform:uppercase;white-space:nowrap;line-height:1;cursor:pointer}
-.btn:disabled{opacity:0.85;pointer-events:none}
 .urgency{font-size:12px;color:#E2E2E6;font-style:italic;font-weight:500;margin-bottom:6px;line-height:1.4;max-width:320px}
 .under{font-size:11px;color:#A1A1A6;margin-bottom:22px}
 .garant{font-size:14px;font-weight:700;color:#fff;margin-bottom:10px}
@@ -32,35 +31,19 @@ h1{font-size:26px;font-weight:900;line-height:1.05;letter-spacing:-0.4px;margin:
 <div class="page">
   <div class="top-bar">SÓ HOJE: ACESSO TURBO DE R$97 POR R$39,90</div>
   <div class="content">
-    <h1>
-      <span style="color:#A855F7;">O BALANCETE QUE</span><br>
-      <span style="color:#FFFFFF;">VOCÊ NÃO CONFERE</span><br>
-      <span style="color:#A855F7;">VAI TE MULTAR?</span>
-    </h1>
+    <h1><span style="color:#A855F7;">O BALANCETE QUE</span><br><span style="color:#FFFFFF;">VOCÊ NÃO CONFERE</span><br><span style="color:#A855F7;">VAI TE MULTAR?</span></h1>
     <div class="sub-w">A receita já sabe onde seu balancete está errado. Você não.</div>
     <div class="video"></div>
     <div class="rec">O QUE O INTER FAZ?</div>
-    <div style="font-size:14px; color:#C2C2C8; line-height:1.6; font-weight:400; margin-bottom:8px; max-width:320px;">
-      Te economiza 3h em cada fechamento.<br>
-      <span style="color:#fff; font-weight:700;">Varre seu balancete inteiro e aponta a conta exata que vai te multar no ECD, antes de você enviar.</span>
-    </div>
-    <a href="SEU_LINK_CAKTO_AQUI" id="btn-checkout" class="btn">QUERO O INTER TURBO</a>
+    <div style="font-size:14px;color:#C2C2C8;line-height:1.6;font-weight:400;margin-bottom:8px;max-width:320px;">Te economiza 3h em cada fechamento.<br><span style="color:#fff;font-weight:700;">Varre seu balancete inteiro e aponta a conta exata que vai te multar no ECD, antes de você enviar.</span></div>
+    <a href="SEU_LINK_CAKTO_AQUI" class="btn">QUERO O INTER TURBO</a>
     <div class="urgency">Oportunidade única: leve agora por R$39,90. Depois volta para R$97</div>
     <div class="under">Acesso Imediato • 100% Online</div>
     <div class="garant">Garantia incondicional de <span>7 dias.</span></div>
     <div class="dev">Se não economizar 3h no seu fechamento,<br>devolvemos <span>100%</span> do seu investimento.</div>
     <div class="div"></div>
-    <div class="foot">
-      <div class="foot-simple">Inter 2027©. Todos os direitos reservados.</div>
-    </div>
+    <div class="foot"><div class="foot-simple">Inter 2027©. Todos os direitos reservados.</div></div>
   </div>
 </div>
-<script>
-document.getElementById('btn-checkout').addEventListener('click', function(e){
-  e.preventDefault(); const btn=this; const link=btn.getAttribute('href');
-  btn.textContent='Guardando...'; btn.disabled=true;
-  setTimeout(function(){ window.location.href=link; }, 1200);
-});
-</script>
 </body>
 </html>
